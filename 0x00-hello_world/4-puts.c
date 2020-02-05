@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
-* main: print the content of the line.
+* main - prints the content of the line.
 *
-*Description: prints using  printf*
+*Description: prints using puts
 *
 * Return: is Always 0.
 */
