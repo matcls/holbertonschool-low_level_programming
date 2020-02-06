@@ -5,7 +5,7 @@
 /**
 * main - entry point
 *
-* Description: Compare a random number and say 
+* Description: Compare a random number and say
 * if it is negatie, positive or 0
 *
 * Return: 0
@@ -30,6 +30,5 @@ int main(void)
 		}
 		else
 			printf("%d is zero\n", n);
-	
 	return (0);
 }
