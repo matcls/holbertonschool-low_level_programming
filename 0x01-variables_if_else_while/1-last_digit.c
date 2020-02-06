@@ -25,14 +25,14 @@ int main(void)
 		printf("Last digit of %d is 0 and is 0\n", n);
 	}
 	else
-		if (lastd < 6)
-		{
-			printf("Last digit of %d is %d an is less than 6 and not 0\n", n, lastd);
-		}
-	else
 		if (lastd > 5)
 		{
 			printf("Last digit of %d is %d an is greater than 5\n", n, lastd);
+		}
+	else
+		if (lastd < 6)
+		{
+			printf("Last digit of %d is %d an is less than 6 and not 0\n", n, lastd);
 		}
 	return (0);
 }
