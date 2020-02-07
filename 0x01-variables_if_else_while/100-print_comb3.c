@@ -3,7 +3,7 @@
 /**
 * main - entry point
 *
-* Description: prints all the numbers of base 16 in lowercase
+* Description:  prints all possible different combinations of two digits.
 *
 * Return: 0
 */
