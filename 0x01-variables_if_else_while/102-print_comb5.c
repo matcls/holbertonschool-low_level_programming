@@ -16,19 +16,19 @@ int main(void)
 	{
 		for (t = 0; t <= 99; t++)
 		{
-				if  (u < t)
+			if  (u < t)
+			{
+				putchar(u / 10 + '0');
+				putchar(u % 10 + '0');
+				putchar(32);
+				putchar(t / 10 + '0');
+				putchar(t % 10 + '0');
+				if (u != 98)
 				{
-					putchar(u / 10 + '0');
-					putchar(u % 10 + '0');
+					putchar(44);
 					putchar(32);
-					putchar(t / 10 + '0');
-					putchar(t % 10 + '0');
-					if (u != 98)
-					{
-						putchar(44);
-						putchar(32);
-					}
 				}
+			}
 		}
 	}
 	putchar('\n');
