@@ -1,0 +1,18 @@
+# ignore all main files
+?-main.c
+8-24
+6-abs
+4-isalpha
+0-holberton
+9-times_table
+11-98
+10-add
+5-sign
+3-islower
+7-last_digit
+2-alphabet_x10
+1-alphabet
+holberton.h1
+_putchar.c
+.emacs.desktop
+*~
