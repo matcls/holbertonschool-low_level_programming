@@ -18,7 +18,7 @@ int main(void)
 	b = 2;
 
 	printf("%.0f, %.0f", a, b);
-	for (i = 0; i <= 96; i++)
+	for (i = 0; i < 96; i++)
 	{
 		f = a + b;
 		a = b;
