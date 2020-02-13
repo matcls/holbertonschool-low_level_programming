@@ -1,8 +1,9 @@
 #include "holberton.h"
 
 /**
- *print_line - draws a straight line in the terminal
+ * print_line - draws a straight line in the terminal
  *
+ * @n: input
  *
  * Return: 0
  */
