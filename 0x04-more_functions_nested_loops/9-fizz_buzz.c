@@ -26,6 +26,7 @@ int main(void)
 			(n  % 5 == 0) ? "buzz" : m;
 		printf("%s ", f);
 	}
+	printf("Buzz");
 	printf("\n");
 	return (0);
 }
