@@ -5,7 +5,7 @@
  *@a: input 1
  *@b: input 2
  *
- * Return: 0
+ * Return: a x b
  */
 
 int mul(int a, int b)
@@ -13,5 +13,5 @@ int mul(int a, int b)
 	int m;
 
 	m = a * b;
-	return(m);
+	return (m);
 }
