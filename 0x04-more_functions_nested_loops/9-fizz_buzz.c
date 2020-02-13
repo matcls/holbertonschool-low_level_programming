@@ -22,7 +22,7 @@ int main(void)
 	for (n = 1; n <= 100; n++)
 	{
 		sprintf(m, "%d", n);
-		f = (n  % 3 == 0) ? (n  % 5 == 0) ? "Fizzbuzz" : "Fizz" :
+		f = (n  % 3 == 0) ? (n  % 5 == 0) ? "FizzBuzz" : "Fizz" :
 			(n  % 5 == 0) ? "Buzz" : m;
 		printf("%s ", f);
 	}
