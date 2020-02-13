@@ -12,7 +12,7 @@ void print_square(int size)
 {
 	int row, filler;
 
-	if (size == 0)
+	if (size <= 0)
 		_putchar('\n');
 
 	for (row = 0; row < size; row++)
@@ -23,5 +23,4 @@ void print_square(int size)
 		}
 		_putchar('\n');
 	}
-	return (0);
 }
