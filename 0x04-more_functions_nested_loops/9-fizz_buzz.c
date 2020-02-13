@@ -18,8 +18,7 @@ int main(void)
 	int n;
 	char m[4];
 
-	//sprintf(m, "%d", n)
-	for (n = 1; n <= 100; n++)
+	for (n = 1; n <= 99; n++)
 	{
 		sprintf(m, "%d", n);
 		f = (n  % 3 == 0) ? (n  % 5 == 0) ? "FizzBuzz" : "Fizz" :
