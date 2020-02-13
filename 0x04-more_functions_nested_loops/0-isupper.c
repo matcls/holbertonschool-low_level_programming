@@ -12,7 +12,7 @@
 int _isupper(int c)
 {
 	int result;
-	int z = 0;
+
 	/*Checks from A to Z*/
 	if (c >= 65 && c <= 90)
 	{
@@ -20,6 +20,6 @@ int _isupper(int c)
 		return (result);
 	}
 	else
-	return (z);
+	return (0);
 }
 
