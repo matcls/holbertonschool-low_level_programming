@@ -5,9 +5,17 @@
  * including the terminating null byte (\0), to the buffer pointed to by dest
  *
  * @src:  source string array
- * @dest: copy from src array
+ * @dest: destiny for src array
  *
  * Return: dest
  */
 
+char *_strcpy(char *dest, char *src)
+{
+	int position;
 
+	/* cicle until null */
+	for (position = 0; src[position]; position++)
+		dest[position] = src[position];
+	return (dest);
+}
