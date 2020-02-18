@@ -17,6 +17,7 @@ char *_strcpy(char *dest, char *src)
 	/* cicle until null */
 	for (position = 0; src[position]; position++)
 		dest[position] = src[position];
+	/* including the null byte in the end */
 	dest[position] = '\0';
 	return (dest);
 }
