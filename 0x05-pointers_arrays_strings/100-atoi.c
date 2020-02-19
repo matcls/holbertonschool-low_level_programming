@@ -27,9 +27,9 @@ int _atoi(char *s)
 		{
 			if (num == 1)
 				letter = 1;
-			if (letter == 1)
-			break;
 		}
+		if (letter == 1)
+			break;
 		runner++;
 	}
 	if (minus % 2 != 0)
