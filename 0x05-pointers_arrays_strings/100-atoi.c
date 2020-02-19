@@ -10,7 +10,7 @@
 
 int _atoi(char *s)
 {
-	int runner, minus, num, letter, retrieved;
+	unsigned int runner, minus, num, letter, retrieved;
 
 	runner = num = minus = letter = retrieved = 0;
 
