@@ -14,7 +14,7 @@ int _atoi(char *s)
 
 	runner = num = minus = letter = retrieved = 0;
 
-	while (s)
+	while (s[runner])
 	{
 		if (s[runner] == 45)
 			minus += 1;
