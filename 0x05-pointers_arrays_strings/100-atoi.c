@@ -33,7 +33,7 @@ int _atoi(char *s)
 		runner++;
 	}
 	if (minus % 2 != 0)
-		retrieved = -retrieved
+		retrieved = -retrieved;
 	return (retrieved);
 }
 
