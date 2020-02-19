@@ -11,13 +11,13 @@
 int _atoi(char *s)
 {
 	int runner, minus, num, letter, retrieved;
-	runner = num = letter = retrieved = 0;
-	minus = 1;
+
+	runner = num = minus = letter = retrieved = 0;
 
 	while (*s)
 	{
 		if (s[runner] == 45)
-			minus *= -1;
+			minus += 1;
 		if (s[runner] >= 48 && s[runner] <= 57)
 		{
 			retrieved = retrieved * 10 + (s[runner] - 48);
@@ -32,5 +32,8 @@ int _atoi(char *s)
 		}
 		runner++;
 	}
- 	return (retrieved * minus);
+	if (minus % 2 != 0)
+		retrieved = -retrieved
+	return (retrieved);
 }
+
