@@ -20,8 +20,7 @@ char *rot13(char *s)
 		{
 			if (s[origin] == origin_[master])
 			{
-				s[origin] = master_
-					[master];
+				s[origin] = master_[master];
 				break;
 			}
 		}
