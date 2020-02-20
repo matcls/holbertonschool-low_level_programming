@@ -16,7 +16,7 @@ char *leet(char *n)
 
 	for (i = 0; *(n + i); i++)
 	{
-		for (j = 0; j < 8; j++)
+		for (j = 0; j < 10; j++)
 		{
 			if (*(n + i) == *(origin + j))
 			*(n + i) = *(master + j);
