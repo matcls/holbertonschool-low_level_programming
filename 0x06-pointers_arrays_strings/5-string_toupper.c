@@ -15,9 +15,9 @@ char *string_toupper(char *s)
 
 	while (*(s + index))
 	{
-		if ((*s >= 97) && (*s <= 122))
+		if (*(s + index) >= 97 && *(s + index) <= 122)
 		{
-			*s = *s - 32;
+			*(s +index) = *(s + index) - 32;
 		}
 
 		index++;
