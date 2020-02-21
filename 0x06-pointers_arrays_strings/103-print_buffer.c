@@ -25,11 +25,11 @@ void print_buffer(char *b, int size)
 	/* printf("%s\n", b); */
 
 	if (size <= 0)
-	printf("%c", 0);
+	printf("%c", 10);
 
 	for (byte = 0; byte < size; byte += 10)
 	{
-		printf("%08x: ", byte);
+		printf("%.8x: ", byte);
 
 		for (index = 0; index < 10; index++)
 		{
@@ -37,7 +37,7 @@ void print_buffer(char *b, int size)
 				printf("%c%c", 32, 32);
 
 			else
-				printf("%02x", b[index + byte]);
+				printf("%.2x", b[index + byte]);
 
 			if (index % 2 != 0 && index != 0)
 				printf("%c", 32);
