@@ -24,8 +24,8 @@ void print_buffer(char *b, int size)
 	/* printf("%d\n", size); */
 	/* printf("%s\n", b); */
 
-	/* if (size <= 0) */
-	/* printf("%c", 0); */
+	if (size <= 0)
+	printf("%c", 0);
 
 	for (byte = 0; byte < size; byte += 10)
 	{
