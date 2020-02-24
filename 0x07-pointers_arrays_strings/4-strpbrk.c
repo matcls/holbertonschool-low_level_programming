@@ -1,5 +1,6 @@
 #include "holberton.h"
 
+
 /**
  * _strchr - locates a character in a string.
  *
@@ -21,6 +22,7 @@ char *_strchr(char *s, char c)
 	return (NULL);
 }
 
+
 /**
  * _strpbrk - searches a string for any of a set of bytes.
  *
@@ -35,9 +37,8 @@ char *_strpbrk(char *s, char *accept)
 {
 	while (s++)
 	{
-		if (_strchr(accept, *s))
-			return ((char *)s);
+		if (_strchr(accept, *s) != 0)
+			return ((char *) s);
 	}
-	return (NULL);
-
+	return (0);
 }
