@@ -1,5 +1,25 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
+
+/**
+ * isNum - function that checks if whole string is a digit.
+ *
+ * @str: string to check.
+ *
+ * Return: 1 if is a digit, 0 if it is not.
+ */
+
+int isNum(const char *str)
+{
+	while (*str)
+	{
+		if (*str < 48 || *str > 57)
+			return (0);
+		str++;
+	}
+	return (1);
+}
 
 /**
  * main - adds positive numbers
@@ -22,7 +42,7 @@ int main(int argc, char *argv[])
 
 	for (i = 1; i < argc; i++)
 	{
-		if (atoi(argv[i]) >= 0 && atoi(argv[i]))
+		if (isNum(argv[i]))
 			sum = sum + atoi(argv[i]);
 		else
 		{
