@@ -79,7 +79,7 @@ char **strtow(char *str)
 
 		if (output[w] == NULL)
 		{
-			for (; w >= 0; w--)
+			while (w--)
 				free(output[w]);
 
 			free(output);
