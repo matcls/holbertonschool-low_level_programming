@@ -2,7 +2,8 @@
 
 /**
  * array_range - creates an array of integers
- * @
+ * @min: min value
+ * @max: max value
  *
  * The array created should contain all the values from min (included)
  * to max (included), ordered from min to max
@@ -22,7 +23,7 @@ int *array_range(int min, int max)
 	if (array == NULL)
 		return (NULL);
 
-	for (filler = 0; min <= max; filler++, min++)
-		array[filler] = min;
+	for (filler = 0; min <= max; filler++)
+		array[filler] = min++;
 	return (array);
 }
