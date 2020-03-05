@@ -20,6 +20,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	unsigned int length_s1 = 0, length_s2 = 0;
 	char *str, *str_n;
 
+	if (!s1)
+		s1 = "";
+	if (!s2)
+		s2 = "";
+
 	while (s1[length_s1])
 		length_s1++;
 	while (s2[length_s2])
