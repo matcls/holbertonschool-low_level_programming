@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <ctype.h>
 
 /**
  * main - multiplies two positive numbers
