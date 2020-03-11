@@ -22,7 +22,7 @@ int main(int argc, char **argv)
 	b = atoi(argv[3]);
 
 	operator = get_op_func(argv[2]);
-	if (!operator)
+	if (!operator || argv[2][1])
 	{
 		printf("Error\n");
 		exit(99);
