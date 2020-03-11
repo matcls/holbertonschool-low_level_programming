@@ -1,5 +1,6 @@
 #include "3-calc.h"
 #include "function_pointers.h"
+
 /**
  * main - performs simple operations and prints the result of the operation,
  * followed by a new line
