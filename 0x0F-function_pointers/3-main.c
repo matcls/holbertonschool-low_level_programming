@@ -10,7 +10,7 @@
  */
 int main(int argc, char **argv)
 {
-	int (*operator)(int, int);
+	int (*operator)(int, int), a ,b;
 
 	if (argc != 4)
 	{
@@ -18,8 +18,8 @@ int main(int argc, char **argv)
 		return (98);
 	}
 
-	int a = atoi(argv[1]);
-	int b = atoi(argv[3]);
+	a = atoi(argv[1]);
+	b = atoi(argv[3]);
 
 	operator = get_op_func(argv[2]);
 	if (!operator)
