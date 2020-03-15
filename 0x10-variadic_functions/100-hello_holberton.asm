@@ -1,5 +1,5 @@
 section .data
-    msg db "Hello, Holberton!",10      
+    msg db "Hello, Holberton",10      
     ; 10 is the ASCII code for a new line (LF)
 
 section .text
