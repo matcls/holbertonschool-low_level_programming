@@ -43,7 +43,7 @@ void print_string(va_list s)
 
 /**
  * print_all - prints anything
- *
+ * @format: format specifier
  */
 void print_all(const char * const format, ...)
 {
