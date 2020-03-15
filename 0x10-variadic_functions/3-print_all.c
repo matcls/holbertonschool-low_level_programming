@@ -74,6 +74,6 @@ void print_all(const char * const format, ...)
 		}
 		i++;
 	}
-	va_end(specifier);
 	printf("\n");
+	va_end(specifier);
 }
