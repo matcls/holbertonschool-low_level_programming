@@ -49,7 +49,7 @@ void print_all(const char * const format, ...)
 {
 	char *separator = "";
 	va_list specifier;
-	unsigned int i = 0, j;
+	unsigned int i = 0, j = 0;
 	type_t type[] = {
 		{"c", print_char},
 		{"i", print_integer},
@@ -64,7 +64,7 @@ void print_all(const char * const format, ...)
 		j = 0;
 		while (type[j].type)
 		{
-			if (format[i] == type[j].type[0])
+			if (type[j].type[0] == format[i])
 			{
 				printf("%s", separator);
 				type[j].f(specifier);
