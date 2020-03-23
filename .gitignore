@@ -1,6 +1,9 @@
 # Ignore all files that aren't C source code or README.md, also ignore main.c files
 
+# Ignore everything
 *
+# But descend into directories
+!*/
 !.gitignore
 !README.md
 !*.c
