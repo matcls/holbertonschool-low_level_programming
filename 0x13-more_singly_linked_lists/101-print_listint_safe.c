@@ -9,6 +9,7 @@
 size_t print_listint_safe(const listint_t *head)
 {
 	const listint_t *ymp = malloc(sizeof(listint_t));
+
 	if (!ymp)
 		exit(98);
 
@@ -17,7 +18,7 @@ size_t print_listint_safe(const listint_t *head)
 		printf("[%p] %d\n", (void *)head, head->n);
 		if (head > head->next)
 			return (print_listint_safe(head->next) + 1);
-		else
+		else if (!(head > head->next))
 		{
 			printf("-> [%p] %d\n", (void *)head->next, head->next->n);
 			return (1);
