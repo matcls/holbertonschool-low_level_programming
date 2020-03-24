@@ -8,11 +8,6 @@
  */
 size_t print_listint_safe(const listint_t *head)
 {
-	const listint_t *ymp = malloc(sizeof(listint_t));
-
-	if (!ymp)
-		exit(98);
-
 	if (head)
 	{
 		printf("[%p] %d\n", (void *)head, head->n);
