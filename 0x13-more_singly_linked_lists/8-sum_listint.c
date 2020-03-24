@@ -8,9 +8,9 @@
  */
 int sum_listint(listint_t *head)
 {
-	int sum = 0;
+	int sum;
 
-	for (sum; head; sum += head->n, head = head->next)
-		;
+	for (sum = 0; head; sum += head->n, head = head->next)
+		continue;
 	return (sum);
 }
