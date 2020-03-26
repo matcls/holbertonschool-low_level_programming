@@ -9,5 +9,5 @@
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
-	return ((index < (sizeof(n) * 4)) ? (int)(n >> index) & 7 : -1);
+	return ((index < (sizeof(n) * 8)) ? (int)(n >> index) & 7 : -1);
 }
