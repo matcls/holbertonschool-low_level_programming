@@ -3,8 +3,8 @@
 /**
  * flip_bits - gets the number of bits you would need to flip
  * to get from one number to another.
- * @n: The bit value to set
- * @index: Te index, starting from 0 of the bit to get
+ * @n: first number
+ * @m: second number
  *
  * Return: returns the number of bits you would need to flip
  * to get from one number to another.
