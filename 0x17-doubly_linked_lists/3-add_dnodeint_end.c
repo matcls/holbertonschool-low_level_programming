@@ -2,9 +2,9 @@
 
 /**
  * add_dnodeint_end - adds a new node at the end of a dlistint_t list.
- * @h: head of the dlistint_t list.
+ * @head: head of the dlistint_t list.
  * @n: data of the node.
- * Return: the address of the new element, or NULL if it failed 
+ * Return: the address of the new element, or NULL if it failed.
  */
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
@@ -13,8 +13,8 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 
 	new_node = malloc(sizeof(dlistint_t));
 	if (!head || !new_node)
-			return (NULL);
-	
+		return (NULL);
+
 	new_node->n = n;
 	new_node->next = NULL;
 
