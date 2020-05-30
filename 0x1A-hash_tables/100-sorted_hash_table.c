@@ -43,7 +43,7 @@ void shash_set_helper(shash_table_t *ht, shash_node_t *new)
 	new->sprev = NULL;
 	new->snext = ht->shead;
 
-	if (!ht->shead || !strcmp(new->key, ht->shead->key))
+	if (!ht->shead || strcmp(new->key, ht->shead->key) <= 0)
 	{
 		if (ht->shead)
 			ht->shead->sprev = new;
