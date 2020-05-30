@@ -57,7 +57,7 @@ void shash_set_helper(shash_table_t *ht, shash_node_t *new)
 			tmp = new->snext;
 			new->snext = tmp->snext;
 		} while (new->snext &&
-			 strcmp(new->key, new->snext->key));
+			 strcmp(new->key, new->snext->key) > 0);
 		new->sprev = tmp;
 		if (tmp->snext)
 			tmp->snext->sprev = new;
